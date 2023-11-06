@@ -26,7 +26,7 @@ make plot
 scp over the memory.txt file to the host and run:
 
 ```bash
-make plot
+make graph
 ```
 
 # Example
