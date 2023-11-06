@@ -1,0 +1,18 @@
+set term dumb
+set output fileout
+
+# Sets memory digits on the y axis in human readable values
+set format y '%.1s%cB
+
+#set yrange [600000:1600000]
+set xlabel "Time (hours)"
+
+# Defines a routine we can use on the plot
+sec_to_hour(x) = x / 3600.0
+
+# Since we are going to use hours, first you should plot this without the
+# xrange set, so you see where the interesting things happen. Then limit the
+# scope here using the hour values, not the eseconds.
+#set xrange [0:8]
+
+plot filein using (sec_to_hour($0)):1 pt "*" title "Memory usage"
