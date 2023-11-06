@@ -37,6 +37,33 @@ The uncompressed `memory.txt` is 21 MiB and it shows enough
 recording for over 800 hours, that's a bit over a month's worth
 of data.
 
+The example output screenshot:
+
+```
+ 2.2MB +-------------------------------------------------------------------+   
+       |        +       +        +       *        +       +        +       |   
+       |               * *             *              Memory usage    *    |   
+ 2.0MB |-+                                                         *     +-|   
+       |                                                                   |   
+       |     *                                                             |   
+ 1.8MB |-+                                                               +-|   
+       |                                                           *       |   
+       |                                                                   |   
+ 1.6MB |-+   *                                                           +-|   
+       |                                                           *       |   
+       |                                                           * * *   |   
+       |                                                 *     *   * * **  |   
+ 1.4MB |-+             *                         * *** * ****************+-|   
+       |     *   * *   * *   *   * *  ** * ***** *******************    *  |   
+       | * * ************************************** *                      |   
+ 1.2MB |******************                                               +-|   
+       |******                                                             |   
+       |        +       +        +       +        +       +        +       |   
+ 1.0MB +-------------------------------------------------------------------+   
+       0       100     200      300     400      500     600      700     800  
+                                   Time (hours)                                
+```
+
 To simulate the graph data and generate it yourself you can use:
 
 ```
